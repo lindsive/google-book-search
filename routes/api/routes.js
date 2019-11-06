@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const controller = require("../../controller/controller");
+const controller = require("../../src/controller/controller");
 
 // routes that access the db queries
 

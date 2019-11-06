@@ -8,7 +8,6 @@ module.exports = {
     findAll: (req, res) => {
         database.Books
             .find(req.query)
-            .sort({date: -1})
             .then(databaseModel => res.json(databaseModel))
             .catch(err => res.status().json(err));
     },
